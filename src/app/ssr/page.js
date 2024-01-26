@@ -6,6 +6,8 @@ import { imageUrlToBase64 } from "@/helpers";
 
 async function getData() {
   // Exercise 1 - Fetch the data here...
+  
+  
   //
   //
   // Exercise 2 - Optimize the image loading here...
