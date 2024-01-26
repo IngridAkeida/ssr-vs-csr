@@ -111,10 +111,21 @@ In our project, the SSR and CSR apps will are working with an external API, so t
 ## Questions
 
 - What is the difference between SSR and CSR?
+In SSR the server generates HTML and sends it to the user, in CSR all information is generated directly in the browser.
+
 - In what ways do you need to change your code to switch between CSR and SSR?
+CSR -> SSR: As the rendering is done by the server itself, the entire process is done internally on itself, so instead of Hooks, fetching the data directly, so the serve send every information during reload.
+
+SSR -> CSR: In this case we have the help of Hooks that help us in the rendering process, so the browser only receives what is necessary during loading.
+
 - What are the advantages of SSR?
+It provides users with more efficient loading the page faster. 
+
 - What are the advantages of CSR?
+It helps to build more efficient user interaction when it is local, like a social network, for example.
+
 - What are the tradeoffs?
+CSR may initially have very slow page loading, directly impacting the user experience; in SSR there is an overload on the server, often causing instability.
 
 ## Conclusion
 
